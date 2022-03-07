@@ -1,0 +1,16 @@
+Django==3.2
+psycopg2==2.8.2
+djangorestframework
+markdown
+Pygments
+django-rest-swagger
+djangorestframework-gis
+ipython
+pytz
+Faker
+pytest
+pytest-cov
+pytest-django
+pytest-mock
+redis
+django-redis
