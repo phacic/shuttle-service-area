@@ -18,7 +18,7 @@ url: `.../providers/`
 
 CRUD operations on Providers are handled by this endpoint
 
-#### To create a provider
+### Create a provider
 
 ```shell
 curl --location --request POST 'http://localhost:5500/providers/' \
@@ -48,13 +48,13 @@ and the response will look something like
 }
 ```
 
-#### List providers
+### List providers
 
 ```shell
 curl --location --request GET 'http://localhost:5500/providers/'
 ```
 
-#### On a single provider
+### On a single provider
 
 ```shell
 curl --location --request DELETE 'http://localhost:5500/providers/3/'
@@ -109,18 +109,18 @@ it should return a response like this
 }
 ```
 
-#### List Service Areas
+### List Service Areas
 
 ```shell
 curl --location --request GET 'http://localhost:5500/service-areas/'
 ```
 
-#### On a single Service Area
+### On a single Service Area
 
 ```shell
 curl --location --request DELETE 'http://localhost:5500/service-areas/4/'
 ```
 
-Note that the above request (DELETE) request currently only does a soft delete on a provider, meaning it status is
- changed from `Active(A)` to `Inactive(I)`. The other HTTP verbs
+Note that the above request (DELETE) request currently only does a soft delete on a service-area,
+meaning it status is  changed from `Active(A)` to `Inactive(I)`. The other HTTP verbs
 (*GET*, *PATCH*, *PUT*) work as expected
