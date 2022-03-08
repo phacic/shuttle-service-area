@@ -1,6 +1,8 @@
-from rest_framework.serializers import ModelSerializer
 from phonenumber_field.serializerfields import PhoneNumberField
-from company.models import Provider
+from rest_framework.serializers import ModelSerializer
+from rest_framework_gis.serializers import GeoFeatureModelSerializer
+
+from company.models import Provider, ServiceArea
 
 
 class ProviderSerializer(ModelSerializer):
@@ -12,3 +14,11 @@ class ProviderSerializer(ModelSerializer):
             'id', 'name', 'email', 'phone_number', 'language', 'currency', 'status',
             'create_date', 'update_date'
         )
+
+
+class ServiceAreaSerializer(GeoFeatureModelSerializer):
+
+    class Meta:
+        model = ServiceArea
+        geo_field = 'poly'
+        fields = ('id', 'provider', 'name', 'price', 'poly')

@@ -15,10 +15,3 @@ class ActiveStatus(ChoiceBase):
     ACTIVE = 'A'
     INACTIVE = 'I'
 
-
-class ActiveManager(models.Manager):
-    """
-    return only active objects (objects with status A)
-    """
-    def get_queryset(self):
-        return super().get_queryset().filter(status=ActiveStatus.ACTIVE.value)
