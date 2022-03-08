@@ -15,3 +15,4 @@ pytest-mock
 redis
 django-redis
 django-phonenumber-field[phonenumberslite]
+gunicorn==20.1.0

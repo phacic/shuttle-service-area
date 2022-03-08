@@ -4,7 +4,7 @@ Providers and their Service-Areas backend
 
 ## Running server
 
-Docker needs to be installed to run the server. Run the following command to start the server
+Docker needs to be installed to run the server. Run the following command to start the server.
 
 ```shell
 docker-compose up -d
@@ -32,3 +32,4 @@ For swagger (OpenAPI) documentation
 ## Todo
 
 - Caching (To improve performance)
+- Use nginx as reverse proxy in production (To improve performance and stability)
