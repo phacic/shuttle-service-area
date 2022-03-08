@@ -46,7 +46,7 @@ services:
     volumes:
       - .:/app
     ports:
-      - "5500:8000"
+      - "80:8000"
     depends_on:
       - db
       - redis
