@@ -1,5 +1,6 @@
-from django.db import models
+from django.contrib.gis.db import models
 from phonenumber_field.modelfields import PhoneNumberField
+
 from company.utils import ActiveStatus, ActiveManager
 
 
@@ -32,5 +33,9 @@ class Provider(models.Model):
             self.delete()
 
 
-# class ServiceArea(models.Model):
-#
+class ServiceArea(models.Model):
+    provider = models.ForeignKey(Provider, on_delete=models.CASCADE, related_name='service_areas')
+    name = models.CharField(max_length=100)
+    price = models.DecimalField(decimal_places=2, max_digits=10)
+    poly = models.PolygonField()
+

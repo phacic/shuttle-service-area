@@ -11,7 +11,7 @@ volumes:
 services:
 
   db:
-    image: postgres:9.6
+    image: postgis/postgis:10-2.5-alpine
     container_name: db
     environment:
       - POSTGRES_USER=postgres
