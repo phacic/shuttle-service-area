@@ -4,7 +4,7 @@
 
 - [Overview](#1-overview)
 - [Provider](#2-provider)
-- [Service Area](#2-service-area)
+- [Service Area](#3-service-area)
 
 ## 1. Overview
 
