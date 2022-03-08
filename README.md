@@ -21,3 +21,9 @@ The server is accessible on `http://localhost:5500/`
 ## API Docs
 
 The API documentation is [located here](docs/api-docs.md).
+
+## Swagger Docs
+
+For swagger (OpenAPI) documentation
+
+`http://localhost:5500/docs/`
