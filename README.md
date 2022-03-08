@@ -27,3 +27,8 @@ The API documentation is [located here](docs/api-docs.md).
 For swagger (OpenAPI) documentation
 
 `http://localhost:5500/docs/`
+
+
+## Todo
+
+- Caching (To improve performance)
